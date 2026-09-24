@@ -12,3 +12,4 @@
     
     👤 Integrante 6: Inventario y Producto Más VendidoTarea: Opción 3 (Ver producto más vendido).Responsabilidad clave:Llevar el contador individual de cada uno de los 5 productos (cant_jugo, cant_agua, etc.).Determinar cuál de los 5 productos tuvo la mayor cantidad acumulada (algoritmo de búsqueda de máximo entre 5 valores).Diseñar e imprimir la pantalla que muestra el resumen de cada producto y resalta el ganador.# proyectoUnoIni
 # proyectoUnoIni
+# proyectoUnoIni
