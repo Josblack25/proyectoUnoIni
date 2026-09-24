@@ -11,3 +11,4 @@
     👤 Integrante 5: Rrecord de Ventas Máxima / Mínima y CategoríasTarea: La otra parte de la Opción 2 (Filtros y Métricas avanzadas).Responsabilidad clave:Comparar la venta de cada cliente para determinar cuál fue la Venta Máxima y la Venta Mínima (guardando el número de cliente asociado).Acumular las unidades vendidas por categoría (Bebidas, Snacks, Papelería) y calcular su porcentaje sobre el total de unidades.
     
     👤 Integrante 6: Inventario y Producto Más VendidoTarea: Opción 3 (Ver producto más vendido).Responsabilidad clave:Llevar el contador individual de cada uno de los 5 productos (cant_jugo, cant_agua, etc.).Determinar cuál de los 5 productos tuvo la mayor cantidad acumulada (algoritmo de búsqueda de máximo entre 5 valores).Diseñar e imprimir la pantalla que muestra el resumen de cada producto y resalta el ganador.# proyectoUnoIni
+# proyectoUnoIni
