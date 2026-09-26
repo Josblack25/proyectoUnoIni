@@ -296,8 +296,54 @@ int main()
 
             break;
         case 2:
-            printf("\n--- Aqui se muestra el reporte del dia ---\n");
-            //  codigo del reporte
+            printf("\n==================================================\n");
+            printf("         REPORTE DE ESTADISTICAS DEL DIA          \n");
+            printf("==================================================\n");
+
+            // Validar que exista al menos un cliente atendido
+            if (total_clientes == 0)
+            {
+                printf("Aun no se han registrado ventas en el dia de hoy.\n");
+                printf("==================================================\n");
+            }
+            else
+            {
+                // 1. CALCULO DEL PROMEDIO DE GASTO POR CLIENTE ($Neto / Clientes)
+                float promedio_gasto = monto_neto_total / total_clientes;
+
+                // 2. CALCULO DEL PORCENTAJE DE DESCUENTO ($Descuentos / Bruto * 100)
+                float porcentaje_descuento = 0.0;
+                if (monto_bruto_total > 0.0)
+                {
+                    porcentaje_descuento = (total_descuentos / monto_bruto_total) * 100.0;
+                }
+
+                // --- IMPRESION DE ACUMULADORES Y RESULTADOS ---
+                printf("--- BALANCE FINANCIERO ---\n");
+                printf("Clientes Atendidos            : %d\n", total_clientes);
+                printf("Monto Bruto Total             : $%.2f\n", monto_bruto_total);
+                printf("Total Descuentos Otorgados    : $%.2f (%.2f%% del bruto)\n", total_descuentos, porcentaje_descuento);
+                printf("Monto Neto Total Recaudado    : $%.2f\n", monto_neto_total);
+                printf("--------------------------------------------------\n");
+                printf("Promedio de Gasto por Cliente : $%.2f\n\n", promedio_gasto);
+
+                printf("--- VENTAS DESTACADAS ---\n");
+                printf("Venta Maxima                  : $%.2f (Cliente #%d)\n", venta_maxima, cliente_maximo);
+                printf("Venta Minima                  : $%.2f (Cliente #%d)\n\n", venta_minima, cliente_minimo);
+
+                printf("--- RESUMEN DE UNIDADES VENDIDAS ---\n");
+                printf("Bebidas (Total: %d)\n", unidades_bebidas);
+                printf("  - Jugo (B001)               : %d uds.\n", cant_B001);
+                printf("  - Agua (B002)               : %d uds.\n", cant_B002);
+                printf("Snacks (Total: %d)\n", unidades_snacks);
+                printf("  - Papas (S001)              : %d uds.\n", cant_S001);
+                printf("Papeleria (Total: %d)\n", unidades_papeleria);
+                printf("  - Cuaderno (P001)           : %d uds.\n", cant_P001);
+                printf("  - Lapiz (P002)              : %d uds.\n", cant_P002);
+                printf("--------------------------------------------------\n");
+                printf("Unidades Totales Vendidas     : %d\n", unidades_totales);
+                printf("==================================================\n");
+            }
             break;
 
         case 3:
